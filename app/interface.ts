@@ -6,3 +6,13 @@ export interface NewestProduct {
   categoryName: string;
   name: string;
 }
+
+export interface ProductInterface {
+  _id: string;
+  images: any;
+  price: number;
+  slug: string;
+  categoryName: string;
+  name: string;
+  description: string;
+}
