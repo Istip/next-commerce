@@ -1,4 +1,4 @@
-export interface NewestProduct {
+export interface SimplifiedProduct {
   _id: string;
   price: number;
   imageUrl: string;

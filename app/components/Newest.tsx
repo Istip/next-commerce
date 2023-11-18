@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NewestProduct } from "../interface";
+import { SimplifiedProduct } from "../interface";
 import { client } from "../lib/sanity";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
@@ -22,7 +22,7 @@ async function getNewest() {
 }
 
 export default async function Newest() {
-  const newestProducts: NewestProduct[] = await getNewest();
+  const SimplifiedProducts: SimplifiedProduct[] = await getNewest();
 
   return (
     <div className="bg-stone-100">
@@ -41,7 +41,7 @@ export default async function Newest() {
         </div>
 
         <ul className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {newestProducts.map((product) => (
+          {SimplifiedProducts.map((product) => (
             <li key={product._id} className="group relative">
               <Link href={`/product/${product.slug}`}>
                 <div className="aspect-square w-full overflow-hidden rounded-lg bg-stone-200 group-hover:opacity-75 lg:h-80">
