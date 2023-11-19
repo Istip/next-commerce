@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import CartProvider from "./components/Providers";
+import CartModal from "./components/CartModal";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${font.className} bg-stone-50`}>
         <CartProvider>
           <Navbar />
+          <CartModal />
           {children}
         </CartProvider>
       </body>

@@ -1,5 +1,3 @@
-"use client";
-
 import { CartProvider as Provider } from "use-shopping-cart";
 
 export default function CartProvider({
