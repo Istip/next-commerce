@@ -40,7 +40,7 @@ export default async function ProductPage({
             className="flex text-primary font-bold gap-2 mb-4 w-max py-4"
           >
             <ChevronLeftCircle />
-            <p>Go Back</p>
+            <span>Go Back</span>
           </Link>
         </div>
         <div className="grid gap-8 md:grid-cols-2">
